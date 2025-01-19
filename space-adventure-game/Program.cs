@@ -1,6 +1,10 @@
 ﻿public class SpaceShip
 {
-    
+    public string Name { get; set; }
+    public int Fuel { get; set; }
+    public int CargoCapacity { get; set; }
+    public List<Cargo> Cargo { get; set; }
+    public Planet Location { get; set; }
 }
 
 public class Planet
