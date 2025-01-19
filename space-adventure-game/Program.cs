@@ -109,6 +109,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        
+        // Create Cargo objects
+        var food = new Cargo("Food", 10);
+        var fuel = new Cargo("Fuel", 5);
+        var medicalSupplies = new Cargo("Medical Supplies", 3);
     }
 }
