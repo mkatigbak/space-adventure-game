@@ -124,6 +124,9 @@ internal class Program
         var voyager = new SpaceShip("Voyager", 3, 3, mars);
         var pioneer = new SpaceShip("Pioneer", 4, 1, jupiter);
 
+        // List of Spaceships
         var spaceships = new List<SpaceShip> { explorer, voyager, pioneer };
+        // List of Planets
+        var planets = new List<Planet> { earth, mars, jupiter };
     }
 }
