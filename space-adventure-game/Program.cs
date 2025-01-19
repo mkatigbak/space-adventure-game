@@ -24,6 +24,17 @@ public class Planet
     {
         AvailableCargo.Remove(item);
     }
+    public void RefuelSpaceship(SpaceShip spaceship, int amount)
+    {
+        if (RefuelingStation)
+        {
+            spaceship.Refuel(amount);
+        }
+        else
+        {
+            Console.WriteLine($"{Name} does not have a refueling station.");
+        }
+    }
 }
 
 public class Cargo
