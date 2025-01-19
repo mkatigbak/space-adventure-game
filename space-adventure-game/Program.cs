@@ -8,6 +8,13 @@ public class Planet
     public string Name { get; set; }
     public List<Cargo> AvailableCargo { get; set; }
     public bool RefuelingStation { get; set; }
+
+    public Planet(string name, List<Cargo> availableCargo, bool refuelingStation)
+    {
+        Name = name;
+        AvailableCargo = availableCargo;
+        RefuelingStation = refuelingStation;
+    }
 }
 
 public class Cargo
