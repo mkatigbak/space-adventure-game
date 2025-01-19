@@ -15,6 +15,15 @@ public class Planet
         AvailableCargo = availableCargo;
         RefuelingStation = refuelingStation;
     }
+
+    public void AddCargo(Cargo item)
+    {
+        AvailableCargo.Add(item);
+    }
+    public void RemoveCargo(Cargo item)
+    {
+        AvailableCargo.Remove(item);
+    }
 }
 
 public class Cargo
