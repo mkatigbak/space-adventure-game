@@ -128,5 +128,19 @@ internal class Program
         var spaceships = new List<SpaceShip> { explorer, voyager, pioneer };
         // List of Planets
         var planets = new List<Planet> { earth, mars, jupiter };
+
+        while (true)
+        {
+            Console.WriteLine("Space Adventure Game");
+            Console.WriteLine("1. List available spaceships");
+            Console.WriteLine("2. Choose a spaceship");
+            Console.WriteLine("3. List planets");
+            Console.WriteLine("4. Choose a destination planet");
+            Console.WriteLine("5. List available cargo on a planet");
+            Console.WriteLine("6. Load cargo onto the spaceship");
+            Console.WriteLine("7. Unload cargo from the spaceship");
+            Console.WriteLine("8. Refuel the spaceship");
+            Console.WriteLine("9. Fly the spaceship to the chosen destination");
+        }
     }
 }
