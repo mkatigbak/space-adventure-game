@@ -5,6 +5,15 @@
     public int CargoCapacity { get; set; }
     public List<Cargo> Cargo { get; set; }
     public Planet Location { get; set; }
+
+    public SpaceShip(string name, int fuel, int cargoCapacity, Planet location)
+    {
+        Name = name;
+        Fuel = fuel;
+        CargoCapacity = cargoCapacity;
+        Cargo = new List<Cargo>();
+        Location = location;
+    }
 }
 
 public class Planet
