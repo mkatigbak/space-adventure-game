@@ -14,6 +14,20 @@
         Cargo = new List<Cargo>();
         Location = location;
     }
+
+    public void Fly(Planet destination)
+    {
+        if (Fuel > 0)
+        {
+            Location = destination;
+            Fuel -= 1;
+            Console.WriteLine($"{Name} flew to {destination.Name}.");
+        }
+        else
+        {
+            Console.WriteLine($"{Name} does not have enough fuel to fly.");
+        }
+    }
 }
 
 public class Planet
