@@ -33,6 +33,30 @@
         Fuel += amount;
         Console.WriteLine($"{Name} refueled by {amount} units.");
     }
+    public void LoadCargo(Cargo item)
+    {
+        if (Cargo.Count < CargoCapacity)
+        {
+            Cargo.Add(item);
+            Console.WriteLine($"{item.Name} loaded onto {Name}.");
+        }
+        else
+        {
+            Console.WriteLine($"{Name} cannot load more cargo.");
+        }
+    }
+    public void UnloadCargo(Cargo item)
+    {
+        if (Cargo.Contains(item))
+        {
+            Cargo.Remove(item);
+            Console.WriteLine($"{item.Name} unloaded from {Name}.");
+        }
+        else
+        {
+            Console.WriteLine($"{item.Name} is not on {Name}.");
+        }
+    }
 }
 
 public class Planet
