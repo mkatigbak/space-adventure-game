@@ -28,6 +28,11 @@
             Console.WriteLine($"{Name} does not have enough fuel to fly.");
         }
     }
+    public void Refuel(int amount)
+    {
+        Fuel += amount;
+        Console.WriteLine($"{Name} refueled by {amount} units.");
+    }
 }
 
 public class Planet
