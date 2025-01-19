@@ -118,5 +118,10 @@ internal class Program
         var earth = new Planet("Earth", new List<Cargo> { food, fuel }, true);
         var mars = new Planet("Mars", new List<Cargo> { medicalSupplies }, false);
         var jupiter = new Planet("Jupiter", new List<Cargo>(), true);
+
+        // Spaceship objects
+        var explorer = new SpaceShip("Explorer", 5, 2, earth);
+        var voyager = new SpaceShip("Voyager", 3, 3, mars);
+        var pioneer = new SpaceShip("Pioneer", 4, 1, jupiter);
     }
 }
