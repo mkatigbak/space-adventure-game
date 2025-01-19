@@ -109,9 +109,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        // Create Cargo objects
+        // Cargo objects
         var food = new Cargo("Food", 10);
         var fuel = new Cargo("Fuel", 5);
         var medicalSupplies = new Cargo("Medical Supplies", 3);
+
+        // Planet objects
+        var earth = new Planet("Earth", new List<Cargo> { food, fuel }, true);
+        var mars = new Planet("Mars", new List<Cargo> { medicalSupplies }, false);
+        var jupiter = new Planet("Jupiter", new List<Cargo>(), true);
     }
 }
