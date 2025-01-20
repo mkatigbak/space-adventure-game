@@ -131,7 +131,7 @@ internal class Program
 
         while (true)
         {
-            Console.WriteLine("Space Adventure Game");
+            Console.WriteLine("\nSpace Adventure Game");
             Console.WriteLine("1. List available spaceships");
             Console.WriteLine("2. Choose a spaceship");
             Console.WriteLine("3. List planets");
@@ -141,6 +141,49 @@ internal class Program
             Console.WriteLine("7. Unload cargo from the spaceship");
             Console.WriteLine("8. Refuel the spaceship");
             Console.WriteLine("9. Fly the spaceship to the chosen destination");
+            Console.WriteLine("10. Exit");
+
+            if (!int.TryParse(Console.ReadLine(), out int choice))
+            {
+                Console.WriteLine("Invalid Input. Please select an option from 1 to 10.");
+                continue;
+            }
+            
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("1 works");
+                    break;
+                case 2:
+                    Console.WriteLine("2 works");
+                    break;
+                case 3:
+                    Console.WriteLine("3 works");
+                    break;
+                case 4:
+                    Console.WriteLine("4 works");
+                    break;
+                case 5:
+                    Console.WriteLine("5 works");
+                    break;
+                case 6:
+                    Console.WriteLine("6 works");
+                    break;
+                case 7:
+                    Console.WriteLine("7 works");
+                    break;
+                case 8:
+                    Console.WriteLine("8 works");
+                    break;
+                case 9:
+                    Console.WriteLine("9 works");
+                    break;
+                case 10: 
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice. Please select an option from 1 to 10.");
+                    break;
+            }
         }
     }
 }
