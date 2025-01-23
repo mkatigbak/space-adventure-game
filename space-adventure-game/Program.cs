@@ -152,13 +152,21 @@ internal class Program
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("1 works");
+                    foreach (var spaceship in spaceships)
+                    {
+                        Console.Write($"{spaceship.Name} ");
+                    }
+                    Console.WriteLine();
                     break;
                 case 2:
                     Console.WriteLine("2 works");
                     break;
                 case 3:
-                    Console.WriteLine("3 works");
+                    foreach (var planet in planets)
+                    {
+                        Console.Write($"{planet.Name} ");
+                    }
+                    Console.WriteLine();
                     break;
                 case 4:
                     Console.WriteLine("4 works");
