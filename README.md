@@ -69,3 +69,4 @@ This program is still a work in progress. Features might not work as expected.
 * ```Choose a spaceship``` implemented.
 * ```List planets``` implemented.
 * ```Choose a destination planet``` implemented.
+* ```Exit``` implemented.
