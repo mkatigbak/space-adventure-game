@@ -65,6 +65,7 @@ This documentation provides a comprehensive overview of the spaceship simulation
 
 ## Note
 This program is still a work in progress. Features might not work as expected.
-* Choice 1 implemented.
-* Choice 2 implemented.
-* Choice 3 implemented.
+* ```List available spaceships``` implemented.
+* ```Choose a spaceship``` implemented.
+* ```List planets``` implemented.
+* ```Choose a destination planet``` implemented.
