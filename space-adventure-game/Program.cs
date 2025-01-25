@@ -161,7 +161,7 @@ internal class Program
                 case 2:
                     Console.Write("Enter the spaceship name: ");
                     string? spaceshipChoice = Console.ReadLine();
-                    if (spaceships.Any(s => s.Name.ToLower() == spaceshipChoice))
+                    if (spaceships.Any(s => s.Name.ToLower() == spaceshipChoice?.ToLower()))
                     {
                         Console.WriteLine($"You've selected spaceship {char.ToUpper(spaceshipChoice[0]) + spaceshipChoice.Substring(1)}.");
                     }
@@ -178,7 +178,16 @@ internal class Program
                     Console.WriteLine();
                     break;
                 case 4:
-                    Console.WriteLine("4 works");
+                    Console.Write("Enter the planet destination: ");
+                    string? planetChoice = Console.ReadLine();
+                    if (planets.Any(p => p.Name.ToLower() == planetChoice?.ToLower()))
+                    {
+                        Console.WriteLine($"You've selected planet {char.ToUpper(planetChoice[0]) + planetChoice.Substring(1)} as your destination.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Planet {planetChoice} does not exist.");
+                    }
                     break;
                 case 5:
                     Console.WriteLine("5 works");
