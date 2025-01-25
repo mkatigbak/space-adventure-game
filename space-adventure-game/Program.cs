@@ -190,20 +190,15 @@ internal class Program
                     }
                     break;
                 case 5:
-                    Console.WriteLine("5 works");
-                    break;
+                    throw new NotImplementedException();
                 case 6:
-                    Console.WriteLine("6 works");
-                    break;
+                    throw new NotImplementedException();
                 case 7:
-                    Console.WriteLine("7 works");
-                    break;
+                    throw new NotImplementedException();
                 case 8:
-                    Console.WriteLine("8 works");
-                    break;
+                    throw new NotImplementedException();
                 case 9:
-                    Console.WriteLine("9 works");
-                    break;
+                    throw new NotImplementedException();
                 case 10: 
                     return;
                 default:
