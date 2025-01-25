@@ -159,7 +159,16 @@ internal class Program
                     Console.WriteLine();
                     break;
                 case 2:
-                    Console.WriteLine("2 works");
+                    Console.Write("Enter the spaceship name: ");
+                    string? spaceshipChoice = Console.ReadLine();
+                    if (spaceships.Any(s => s.Name.ToLower() == spaceshipChoice))
+                    {
+                        Console.WriteLine($"You've selected spaceship {char.ToUpper(spaceshipChoice[0]) + spaceshipChoice.Substring(1)}.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{spaceshipChoice} doesn't exist.");
+                    }
                     break;
                 case 3:
                     foreach (var planet in planets)
